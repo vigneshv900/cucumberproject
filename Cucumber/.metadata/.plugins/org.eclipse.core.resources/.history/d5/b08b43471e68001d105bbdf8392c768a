@@ -1,7 +1,0 @@
-Feature: Login feature
-As a user I need to login to an applciation
-
-Scenario: Need to login to an application sucessfully
-Given user is on the login screen
-When the user enters the "username" and "password"
-Then he needs to login successfully
