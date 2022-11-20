@@ -1,0 +1,25 @@
+package stepdefinition;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class LoginSteps {
+
+	@Given("user is on the login screen")
+	public void user_is_on_the_login_screen() {
+	   System.out.println("Given step");
+	}
+
+	@When("the user enters the username and password")
+	public void the_user_enters_the_username_and_password() {
+	   System.out.println("When step");
+	}
+
+	@Then("he needs to login successfully")
+	public void he_needs_to_login_successfully() {
+	    System.out.println("Then step");
+	}
+
+	
+}

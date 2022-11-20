@@ -1,0 +1,16 @@
+Feature: Login feature
+
+As a user I need to login to an applciation
+
+Scenario: Need to login to an application sucessfully
+Background: Login with user credentials
+
+Scenario Outline: Login with the given data
+
+Given user is on the login screen
+When the user enters the username as "<user>" and password as "<pass>"
+Then he needs to login successfully
+Examples:
+|user1|pass1|
+|user2|pass2|
+
