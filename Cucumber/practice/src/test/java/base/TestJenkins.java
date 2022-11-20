@@ -24,6 +24,8 @@ WebDriver driver;
 		driver = new ChromeDriver();
 		driver.get("https://www.google.com");
 		Thread.sleep(3000);
+		System.out.println(driver.getPageSource());
+		
 		}
 	
 	
