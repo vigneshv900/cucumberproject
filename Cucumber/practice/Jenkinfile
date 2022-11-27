@@ -1,25 +1,15 @@
 pipeline{
-    
-    stages {
-        
-        stage('Compilation') {
-        steps {
-             withMaven(maven: 'maven_3_5_0') {
-                    sh 'mvn clean install'
-
-                }
-        }
-        }
-        
-        stage("Test") {
-            
-            steps {
-                withMaven(maven: 'maven_3_5_0') {
-                    sh 'mvn test'
-
-                }
-            }
-        }
-    }
+    agent any
+   stages {
+   stage('Run tests') {
+   steps {
+   sh './mvnw clean test'
+   
+   }
+   
+   }
+   
+   
+   }
 
 }
